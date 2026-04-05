@@ -8,6 +8,11 @@ import Login from "./pages/Login.jsx";
 import Signup from "./pages/Signup.jsx";
 import {Toaster} from "react-hot-toast";
 import LandingPage from "./pages/LandingPage.jsx";
+import AIChat from "./pages/AIChat";
+import About from "./pages/About.jsx";
+import Contact from "./pages/Contact.jsx";
+
+
 
 const App = () => {
     return (
@@ -24,6 +29,9 @@ const App = () => {
                     <Route path="/filter" element={<Filter />} />
                     <Route path="/login" element={<Login />} />
                     <Route path="/signup" element={<Signup />} />
+                    <Route path="/ai-chat" element={<AIChat />} />
+                    <Route path="/about" element={<About />} />
+                    <Route path="/contact" element={<Contact />} />
                 </Routes>
             </BrowserRouter>
         </>

@@ -31,11 +31,12 @@ const Expense = () => {
 
         try {
             const response = await axiosConfig.get(
-                `${API_ENDPOINTS.GET_ALL_EXPENSE}`
+                "/dashboard/all-data"
             );
+            console.log("FULL EXPENSE DATA:", response.data);
 
-            if (response.data) {
-                setExpenseData(response.data);
+            if (response.status === 200) {
+                setExpenseData(response.data.expenses);
             }
         } catch (error) {
             console.error("Failed to fetch expense details:", error);

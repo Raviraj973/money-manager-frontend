@@ -10,12 +10,12 @@ const Dashboard = ({children, activeMenu}) => {
             <Menubar activeMenu={activeMenu} />
 
             {user && (
-                <div className="flex">
+                <div className="flex  min-h-screen bg-gray-50">
                     <div className="max-[1080px]:hidden">
                         <Sidebar activeMenu={activeMenu}/>
                     </div>
 
-                    <div className="grow mx-5">{children}</div>
+                    <div className="flex-1 mx-5 overflow-y-auto">{children}</div>
                 </div>
             )}
         </div>

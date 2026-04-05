@@ -4,7 +4,7 @@ import {Link} from "react-router-dom";
 const HeroSection = () => {
     return (
         <section className="text-center py-20 md:py-32">
-            <div className="container mx-auto px-4">
+            <div className="container mx-auto px-4 fade-in-up delay-1">
                 <h1 className="text-4xl md:text-6xl font-extrabold tracking-tight text-gray-900 leading-tight">
                     Take Control of Your Finances
                 </h1>

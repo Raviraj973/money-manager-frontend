@@ -11,6 +11,8 @@ import toast from "react-hot-toast";
 import RecentTransactions from "../components/RecentTransactions.jsx";
 import FinanceOverview from "../components/FinanceOverview.jsx";
 import Transactions from "../components/Transactions.jsx";
+//import IncomeOverview from "../components/IncomeOverview.jsx";
+//import ExpenseOverview from "../components/ExpenseOverview.jsx";
 
 const Home = () => {
     useUser();
@@ -26,6 +28,9 @@ const Home = () => {
 
         try {
             const response = await axiosConfig.get(API_ENDPOINTS.DASHBOARD_DATA);
+            console.log("Dashboard API FULL RESPONSE:", response);
+            console.log("Dashboard DATA ONLY:", response.data);
+            console.log("recentTransactions:", response.data?.recentTransactions);
             if (response.status === 200) {
                 setDashboardData(response.data);
             }
@@ -80,6 +85,8 @@ const Home = () => {
                             totalIncome={dashboardData?.totalIncome || 0}
                             totalExpense={dashboardData?.totalExpense || 0}
                         />
+
+                        
 
                         {/* Expense transactions */}
                         <Transactions

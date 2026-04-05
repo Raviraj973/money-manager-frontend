@@ -1,7 +1,7 @@
 import logo from "./logo.png";
 import login_bg from "./login-bg.png";
 import landing from "./landing.png";
-import {Coins, FunnelPlus, LayoutDashboard, List, Wallet} from "lucide-react";
+import {Coins, FunnelPlus, LayoutDashboard, List, Wallet, MessageSquare} from "lucide-react";
 
 export const assets = {
     logo,
@@ -40,4 +40,10 @@ export const SIDE_BAR_DATA = [
         icon: FunnelPlus,
         path: "/filter",
     },
+    {
+        id: "06",
+        label: "AI Insights",
+        icon: MessageSquare,
+        path: "/ai-chat",
+    }
 ];

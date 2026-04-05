@@ -31,9 +31,10 @@ const Income = () => {
         setLoading(true);
 
         try {
-            const response = await axiosConfig.get(API_ENDPOINTS.GET_ALL_INCOMES);
+            const response = await axiosConfig.get("/dashboard/all-data");
+            
             if (response.status === 200) {
-               setIncomeData(response.data);
+               setIncomeData(response.data.incomes);
             }
         }catch(error) {
             console.error('Failed to fetch income details:', error);

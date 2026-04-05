@@ -7,7 +7,7 @@ const IncomeOverview = ({transactions, onAddIncome}) => {
     const [chartData, setChartData] = useState([]);
     useEffect(() => {
         const result = prepareIncomeLineChartData(transactions);
-        console.log(result);
+        console.log("FINAL chartData:", result);
         setChartData(result);
 
         return () => {};
@@ -27,7 +27,7 @@ const IncomeOverview = ({transactions, onAddIncome}) => {
                     <Plus size={15} className="text-lg" /> Add Income
                 </button>
             </div>
-            <div className="mt-10">
+            <div className="mt-10 w-full h-[300px]">
                 <CustomLineChart data={chartData} />
             </div>
         </div>
