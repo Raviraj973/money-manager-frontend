@@ -59,9 +59,9 @@ const About = () => {
 
             <div className="grid grid-cols-1 sm:grid-cols-3 gap-4 mt-4">
               {[
-                { name: "Raviraj Khot", role: "Full Stack Developer" },
-                { name: "Friend 1", role: "Frontend Developer" },
-                { name: "Friend 2", role: "Backend Developer" }
+                { name: "Raviraj Khot",  },
+                { name: "Nidhi Mane",  },
+                { name: "Mehek Khan",  }
               ].map((member, i) => (
                 <div
                   key={i}
