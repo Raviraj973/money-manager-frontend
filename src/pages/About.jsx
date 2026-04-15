@@ -31,10 +31,10 @@ const About = () => {
             </div>
 
             <p className="text-gray-600">
-              Money Manager is a project built by a group of passionate developers and it all started with a simple question — 
+              Finsight is a project built by a group of passionate developers and it all started with a simple question — 
               “Where does all my money go?” As students managing limited budgets, we often found ourselves confused and overwhelmed. 
               So we decided to build something that could help not just us, but anyone trying to take control of their finances. 
-              That’s how Money Manager came to life.
+              That’s Finsight came to life.
             </p>
 
             <p className="text-gray-500 mt-4 italic">

@@ -66,7 +66,7 @@ const Contact = () => {
         </form>
 
         <p className="text-gray-500 mt-6">
-          Or reach us at: <b>support@moneymanager.com</b>
+          Or reach us at: <b>support@Finsight.com</b>
         </p>
 
       </div>
